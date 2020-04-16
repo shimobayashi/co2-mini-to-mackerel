@@ -1,0 +1,14 @@
+{
+  "name": "co2-mini-to-mackerel",
+  "version": "1.0.0",
+  "description": "post co2-mini values to mackerel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "co2-monitor": "git@github.com:maddindeiss/co2-monitor.git"
+  },
+  "author": "shimobayashi",
+  "license": "ISC"
+}

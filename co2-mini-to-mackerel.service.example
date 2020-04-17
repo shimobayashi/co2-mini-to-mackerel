@@ -1,0 +1,20 @@
+[Unit]
+Description=co2-mini-to-mackerel
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /home/pi/repositories/co2-mini-to-mackerel/index.js
+WorkingDirectory=/home/pi/repositories/co2-mini-to-mackerel
+KillMode=process
+Restart=always
+User=root
+Group=root
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=co2-mini-to-mackerel
+Environment=MACKEREL_API_KEY=XXX MACKEREL_SERVICE_NAME=home MACKEREL_METRIC_NAME_SUFFIX=bedroom 
+
+[Install]
+WantedBy=multi-user.target

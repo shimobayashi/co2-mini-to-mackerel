@@ -1,4 +1,4 @@
-# usage: MACKEREL_API_KEY=XXX MACKEREL_SERVICE_NAME=home MACKEREL_METRIC_NAME_SUFFIX=bedroom sudo -E node index.js
+// usage: MACKEREL_API_KEY=XXX MACKEREL_SERVICE_NAME=home MACKEREL_METRIC_NAME_SUFFIX=bedroom sudo -E node index.js
 
 const Co2Monitor = require('co2-monitor');
 const axios = require('axios');
